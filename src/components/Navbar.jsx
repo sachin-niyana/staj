@@ -42,7 +42,7 @@ const Navbar = () => {
                             {show ? <AiOutlineClose /> : <HiMenuAlt1 />}
                         </h4>
                     </div>
-                    <ul className={` gap-10 mb-0 bg-white  duration-300  flex-column  pl-0 list-none ${show ? "flex absolute left-0 w-full top-0 flex-col justify-center items-center h-full" : "left-[-100%]"
+                    <ul className={` gap-10 mb-0 bg-white  duration-300  flex-column  pl-0 list-none ${show ? "flex absolute left-0 w-full top-0 flex-col justify-center items-center h-full" : ""
                         }`}>
                         <li>
                             <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Home</a>
