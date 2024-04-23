@@ -5,9 +5,11 @@ import OurTeam from "./components/OurTeam";
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <OurTeam />
+      <div className="overflow-hidden">
+        <Navbar />
+        <Header />
+        <OurTeam />
+      </div>
     </>
   );
 }

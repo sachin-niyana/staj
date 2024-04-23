@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
       {isSidebarOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black opacity-50 z-50"
+          className="lg:hidden fixed inset-0 bg-black z-50"
           onClick={sidebarHandler}
         ></div>
       )}
