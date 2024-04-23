@@ -4,7 +4,7 @@ const OurTeam = () => {
   return (
     <div className="bg-white">
       <div className="container max-w-[1164px] mx-auto px-3 pt-[120px]">
-        <p>Team</p>
+        <p className="text-center text-orange ">Team</p>
       </div>
     </div>
   );
