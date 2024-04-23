@@ -68,13 +68,13 @@ const Navbar = () => {
           >
             <RxCross1 className="sm:w-10 sm:h-10 w-7 h-7" />
           </button>
-          <ul className="flex flex-col items-center space-y-4 my-5">
+          <ul className="flex flex-col items-center gap-3  space-y-4 my-5">
             {navLink.map((value, index) => {
               return (
                 <li key={index}>
                   <a
                     aria-label={value.title}
-                    className="ff-poppins text-md text-white hover:text-golden  duration-300"
+                    className="ff-poppins text-[20px] lg:text-md text-white hover:text-golden  duration-300"
                     key={index}
                     href={value.path}
                     onClick={sidebarHandler}
@@ -86,7 +86,7 @@ const Navbar = () => {
             })}
           </ul>
           <div className="flex justify-center">
-            <button className="bg-golden block lg:hidden ff-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
+            <button className="bg-golden mt-1 lg:mt-0 block lg:hidden ff-poppins text-base h-[54px] lg:h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[200px] lg:w-[212px] font-bold capitalize py-4 lg:py-5 px-8 lg:px-10 rounded-[30px] text-darkblue">
               DOWNLOAD APP
             </button>
           </div>
