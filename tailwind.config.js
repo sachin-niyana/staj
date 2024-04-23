@@ -11,9 +11,6 @@ module.exports = {
         xl: "30px",
         xxl: "64px",
       },
-      fontFamily: {
-        Poppins: ["Poppins"],
-      },
       colors: {
         golden: "rgba(216,171,78)",
         darkblue: "rgba(55,63,76)",
