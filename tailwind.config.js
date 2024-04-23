@@ -17,6 +17,9 @@ module.exports = {
         orange: "#FF5733",
         skyblue: "#F9F8FD",
       },
+      fontFamily: {
+        poppins: ["poppins", "sans-serif"],
+      },
     },
   },
   plugins: [],
