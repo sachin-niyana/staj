@@ -1,3 +1,19 @@
 nav li a:hover {
   -webkit-text-stroke-width: 0.5px;
 }
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-100% - 10px)
+    ); /* Adjust the distance to scroll */
+  }
+}
+
+.scroll-container.auto-scroll {
+  animation: scroll 10s linear infinite; /* Adjust the duration of the animation */
+}
