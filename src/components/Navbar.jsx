@@ -1,73 +1,99 @@
-import React, { useState } from 'react';
-import { HiMenuAlt1 } from "react-icons/hi";
-import { AiOutlineClose } from "react-icons/ai";
-import navlogo from "../assets/images/svg/nav_logo.svg";
-
+"use client";
+import { useState } from "react";
+import { navLink } from "./common/Helper";
+import { TfiMenuAlt } from "react-icons/tfi";
+import { RxCross1 } from "react-icons/rx";
+import logo from "../assets/images/svg/nav_logo.svg";
 const Navbar = () => {
-    const [show, setShow] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-    function showNav() {
-        setShow(!show);
-        document.body.classList.toggle("overflow-hidden", !show);
-    }
+  const sidebarHandler = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+    document.body.classList.toggle("overflow-hidden");
+  };
 
-    return (
-        <nav className="bg-white py-0 xl:pt-9">
-            <div className="max-w-[1464px] px-3 mx-auto">
-                <div className="flex justify-between items-center w-full">
-                    <img className="max-w-[186px] px-3 cursor-pointer" src={navlogo} alt="navlogo" />
-                    <ul className="hidden lg:flex mb-0 align-middle gap-12 list-none">
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Features</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">About</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Contact Us</a>
-                        </li>
-
-                    </ul>
-                    <button className="bg-golden hidden lg:block font-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
-                        DOWNLOAD APP
-                    </button>
-                    <div className="flex flex-col lg:hidden  z-50 relative" onClick={showNav}>
-                        <h4 className="text-darkblue mr-4">
-                            {show ? <AiOutlineClose /> : <HiMenuAlt1 />}
-                        </h4>
-                    </div>
-                    <ul className={` gap-10 mb-0 bg-white  duration-300  flex-column  pl-0 list-none ${show ? "flex absolute left-0 w-full top-0 flex-col justify-center items-center h-full" : ""
-                        }`}>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Home</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Features</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">About</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">FAQ</a>
-                        </li>
-                        <li>
-                            <a className="ff-poippins text-md text-darkblue hover:text-golden  duration-300" href="#">Contact Us</a>
-                        </li>
-                        <button className="bg-golden block lg:hidden font-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
-                            DOWNLOAD APP
-                        </button>
-                    </ul>
-
-                </div>
-            </div>
-        </nav>
-    )
-}
+  return (
+    <nav className="z-10 py-3.5 flex-grow-0">
+      <div className="flex items-center justify-between container max-w-[1464px] mx-auto px-3">
+        <a href="/">
+          <img
+            className="sm:w-[186px] w-[150px] h-[60px]"
+            src={logo}
+            alt="logo"
+          />
+        </a>
+        <ul className="hidden lg:flex gap-12 ">
+          {navLink.map((value, index) => {
+            return (
+              <li key={index}>
+                <a
+                  aria-label={value.title}
+                  className="ff-poppins text-md text-darkblue hover:text-golden  duration-300"
+                  key={index}
+                  href={value.path}
+                >
+                  {value.title}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+        <div className="hidden lg:flex">
+          <button className="bg-golden block font-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
+            DOWNLOAD APP
+          </button>
+        </div>
+        <button
+          className="block lg:hidden text-black text-3xl"
+          onClick={sidebarHandler}
+        >
+          <TfiMenuAlt className="sm:w-10 sm:h-10 w-7 h-7" />
+        </button>
+      </div>
+      {isSidebarOpen && (
+        <div
+          className="lg:hidden fixed inset-0 bg-black opacity-50 z-50"
+          onClick={sidebarHandler}
+        ></div>
+      )}
+      <div
+        className={`lg:hidden fixed inset-y-0 left-0 w-full bg-bg-blue z-50 transform ${
+          isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+        } transition duration-300 ease-in-out`}
+      >
+        <div className="p-4 min-h-screen flex flex-col justify-center items-center">
+          <button
+            className="text-white text-sm absolute top-6 sm:right-4 right-0 w-10 h-10"
+            onClick={sidebarHandler}
+          >
+            <RxCross1 className="sm:w-10 sm:h-10 w-7 h-7" />
+          </button>
+          <ul className="flex flex-col items-center space-y-4 my-5">
+            {navLink.map((value, index) => {
+              return (
+                <li key={index}>
+                  <a
+                    aria-label={value.title}
+                    className="ff-poppins text-md text-white hover:text-golden  duration-300"
+                    key={index}
+                    href={value.path}
+                    onClick={sidebarHandler}
+                  >
+                    {value.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+          <div className="flex justify-center">
+            <button className="bg-golden block lg:hidden font-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
+              DOWNLOAD APP
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
