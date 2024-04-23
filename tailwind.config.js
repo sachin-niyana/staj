@@ -9,10 +9,7 @@ module.exports = {
         md: "18px",
         lg: "24px",
         xl: "30px",
-        xxl: "64px",
-      },
-      fontFamily: {
-        Poppins: ["Poppins"],
+        xxl: "60px",
       },
       colors: {
         golden: "rgba(216,171,78)",
