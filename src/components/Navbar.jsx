@@ -3,7 +3,7 @@ import { useState } from "react";
 import { navLink } from "./common/Helper";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { RxCross1 } from "react-icons/rx";
-import logo from "../assets/images/svg/nav_logo.svg";
+import logo from "../assets/images/png/Logo.png";
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 

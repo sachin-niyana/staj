@@ -14,11 +14,8 @@ module.exports = {
       colors: {
         golden: "#D8AB4E",
         darkblue: "#373F4C",
-        orange: "rgba(255,87,51)",
-        "bg-grey": "rgba(249,248,253)",
         orange: "#FF5733",
-        pink: "rgba(250,229,229)",
-        "bg-darkgrey": "rgba(103,109,109)",
+        skyblue: "#F9F8FD",
       },
     },
   },
