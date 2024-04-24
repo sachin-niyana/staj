@@ -24,17 +24,22 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[rgba(250,229,229)] h-[66px] mt-6 lg:-mt-[75px]  z-2">
-                    <div className="bg-orange  z-3 top-0 flex items-center justify-center w-full h-[74px] opacity-100 -rotate-2">
-                        <p className="ff-poppins text-lg text-white font-medium">Automation Your Project</p>
-                        <img className="max-w-[64px] mx-10" src={circles} alt="circles" />
-                        <p className="ff-poppins text-lg text-white font-medium">30 Day Trial</p>
-                        <img className="max-w-[64px] mx-10" src={circles} alt="circles" />
-                        <p className="ff-poppins text-lg text-white font-medium">24/7 Support</p>
-                        <img className="max-w-[64px] mx-10" src={circles} alt="circles" />
-                        <p className="ff-poppins text-lg text-white font-medium">20 Millions+Templates</p>
-                        <img className="max-w-[64px] mx-10" src={circles} alt="circles" />
-                        <p className="ff-poppins text-lg text-white font-medium">Single Click Editor</p>
+                <div className="bg-[rgba(250,229,229)] h-[66px] mt-[70px] lg:-mt-[75px] md:mt-[-30px]  z-2">
+                    <div className="bg-orange overflow-x-auto  z-3 top-0 flex items-center justify-center  w-full h-[74px] opacity-100 -rotate-2">
+                        <div class="scroll-container">
+                            <div class="scroll-content flex items-center justify-center">
+                                <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">Automation Your Project</p>
+                                <img class="max-w-[64px] mx-10" src={circles} alt="circles" />
+                                <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">30 Day Trial</p>
+                                <img class="max-w-[64px] mx-10" src={circles} alt="circles" />
+                                <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">24/7 Support</p>
+                                <img class="max-w-[64px] mx-10" src={circles} alt="circles" />
+                                <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">20 Millions+Templates</p>
+                                <img class="max-w-[64px] mx-10" src={circles} alt="circles" />
+                                <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">Single Click Editor</p>
+                               
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
