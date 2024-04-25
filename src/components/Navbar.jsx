@@ -13,7 +13,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="z-10 py-3.5 flex-grow-0 bg-skyblue">
+    <nav className="z-10 pt-4 xl:pt-9 pb-[14px] flex-grow-0 bg-skyblue">
       <div className="flex items-center justify-between container max-w-[1464px] mx-auto px-3">
         <a href="/">
           <img
@@ -39,7 +39,7 @@ const Navbar = () => {
           })}
         </ul>
         <div className="hidden lg:flex">
-          <button className="bg-golden block ff-poppins text-base h-[64px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
+          <button className="bg-golden block ff-poppins text-base h-[60px] hover:bg-darkblue hover:text-white duration-300 w-[212px] font-bold capitalize py-5 px-10 rounded-[30px] text-darkblue">
             DOWNLOAD APP
           </button>
         </div>

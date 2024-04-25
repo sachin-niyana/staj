@@ -1,4 +1,5 @@
 import "./App.css";
+import Aboutus from "./components/Aboutus";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -9,7 +10,8 @@ function App() {
       <div className="overflow-hidden">
         <Navbar />
         <Header />
-        <Features/>
+        <Features />
+        <Aboutus/>
         <OurTeam />
       </div>
     </>
