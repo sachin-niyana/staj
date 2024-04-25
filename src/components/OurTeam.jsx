@@ -2,6 +2,7 @@ import React from "react";
 import julian from "../assets/images/png/julian.png";
 import alisa from "../assets/images/png/alisa.png";
 import { DotedBox, LineBox, Linkedin, Twitter } from "./common/Icon";
+import { Link } from "react-router-dom";
 const OurTeam = () => {
   return (
     <div className="bg-white">
@@ -17,7 +18,7 @@ const OurTeam = () => {
             <div className="absolute md:block hidden bottom-[-10%] left-[-8%]">
               <DotedBox />
             </div>
-            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 hover:scale-95 duration-300 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img
                   className="w-[108px] h-[108px]"
@@ -35,8 +36,18 @@ const OurTeam = () => {
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
-                  <Linkedin />
-                  <Twitter />
+                  <Link
+                    to="https://in.linkedin.com/"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
+                    <Linkedin />
+                  </Link>
+                  <Link
+                    to="https://twitter.com/"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
+                    <Twitter />
+                  </Link>
                 </div>
                 <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
@@ -52,7 +63,7 @@ const OurTeam = () => {
             <div className="absolute md:block hidden top-[-31.5%] right-[-11%]">
               <LineBox />
             </div>
-            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 hover:scale-95 duration-300 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img className="w-[108px] h-[108px]" src={alisa} alt="alisa" />
                 <div className="flex flex-col">
@@ -66,8 +77,18 @@ const OurTeam = () => {
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
-                  <Linkedin />
-                  <Twitter />
+                  <Link
+                    to="https://in.linkedin.com/"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
+                    <Linkedin />
+                  </Link>
+                  <Link
+                    to="https://twitter.com/"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
+                    <Twitter />
+                  </Link>
                 </div>
                 <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum

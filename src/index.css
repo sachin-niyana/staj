@@ -7,3 +7,7 @@
 .ff-poppins {
   font-family: "poppins";
 }
+
+::-webkit-scrollbar {
+  scrollbar-width: none;
+}
