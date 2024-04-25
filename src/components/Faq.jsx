@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { accordionData } from "./common/Helper";
 import { HiPlus } from "react-icons/hi2";
 import { FaRegWindowMinimize } from "react-icons/fa6";
-import { Trianglebox } from "./common/Icon";
+import { Trianglebox, Trianglebox2 } from "./common/Icon";
 
 const Faq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
@@ -18,8 +18,11 @@ const Faq = () => {
   return (
     <div className="bg-white">
       <div className="container max-w-[1464px] mx-auto px-3 pb-[120px] relative">
-        <div className="absolute">
+        <div className="absolute right-[10%]">
           <Trianglebox />
+        </div>
+        <div className="absolute bottom-[20%] right-[-5%]">
+          <Trianglebox2 />
         </div>
         <p className="text-center text-orange font-poppins font-normal text-md">
           Frequently Asked Questions
@@ -31,7 +34,7 @@ const Faq = () => {
           <div
             className={`xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab1"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
                 : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab1")}
@@ -43,7 +46,7 @@ const Faq = () => {
           <div
             className={` xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
                 : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab2")}
@@ -55,7 +58,7 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
                 : "mr-4 bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab3")}
@@ -67,7 +70,7 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab4"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
                 : "mr-4 bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab4")}
@@ -79,7 +82,7 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab5"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
                 : "mr-4 bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab5")}
