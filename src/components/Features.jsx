@@ -13,7 +13,7 @@ const Features = () => {
     return (
         <div className='pt-14 pb-[120px] sm:pt-[80px] md:py-[120px]'>
             <div className='max-w-[1464px] mx-auto px-3 relative'>
-                <img className='absolute z-0 end-[32.5%] top-2 max-w-[40px] md:max-w-[96px]' src={dottedCircleVec} alt="" />
+                <img className='absolute z-0 end-[32.5%] top-2 max-w-[40px] md:max-w-[96px]' src={dottedCircleVec} alt="dotted-circles" />
                 <p className='text-orange ff-poppins text-sm sm:text-base md:text-md text-center'>Features</p>
                 <h2 className='text-center text-darkblue ff-poppins font-bold text-[30px] sm:text-[45px] xl:text-xxl relative z-10'>How it works</h2>
 
