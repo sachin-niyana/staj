@@ -24,8 +24,8 @@ const Aboutus = () => {
     };
 
     return (
-        <div className='bg-skyblue pt-12 sm:pt-[100px] lg:pt-[200px] xl:pt-[322px] mt-[-15%] pb-12 sm:pb-[60px] md:pb-[80px] lg:pb-[120px]'>
-            <div className='max-w-[1440px] mx-auto px-3'>
+        <div className='bg-skyblue pt-12 sm:pt-[100px] lg:pt-[200px] xl:pt-[322px] mt-[-15%] pb-12 sm:pb-[60px] md:pb-[80px] xl:pb-[120px]'>
+            <div className='max-w-[1464px] mx-auto px-3'>
                 <div className="flex flex-col-reverse justify-between xl:justify-start lg:flex-row items-center">
                     <div className='relative lg:mt-0 mt-8'>
                         {showPlayBtn && (
