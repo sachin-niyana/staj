@@ -9,7 +9,7 @@ const OurTeam = () => {
         <p className="text-center text-orange font-poppins font-normal text-md">
           Team
         </p>
-        <h2 className="font-poppins font-extrabold text-xxl text-darkblue text-center mt-3">
+        <h2 className="font-poppins font-extrabold text-xxl text-darkblue text-center mt-3 leading-[113%]">
           Our team
         </h2>
         <div className="flex lg:flex-row flex-col justify-center gap-8 items-center mt-[60px]">
@@ -17,7 +17,7 @@ const OurTeam = () => {
             <div className="absolute md:block hidden bottom-[-10%] left-[-8%]">
               <DotedBox />
             </div>
-            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[5px_8px_20px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img
                   className="w-[108px] h-[108px]"
@@ -52,7 +52,7 @@ const OurTeam = () => {
             <div className="absolute md:block hidden top-[-31.5%] right-[-11%]">
               <LineBox />
             </div>
-            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[-5px_8px_20px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white rounded-xl sm:py-12 py-8 px-4 sm:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img className="w-[108px] h-[108px]" src={alisa} alt="alisa" />
                 <div className="flex flex-col">
