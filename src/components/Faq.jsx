@@ -18,19 +18,19 @@ const Faq = () => {
   return (
     <div className="bg-white" id="FAQ">
       <div className="container max-w-[1464px] mx-auto px-3 pb-[120px] relative">
-        <div className="absolute right-[10%]">
+        <div className="absolute md:block hidden right-[10%]">
           <Trianglebox />
         </div>
-        <div className="absolute bottom-[20%] right-[-5%]">
+        <div className="absolute md:block hidden bottom-[20%] right-[-5%]">
           <Trianglebox2 />
         </div>
-        <div className="absolute top-[7%] left-[-12%]">
+        <div className="absolute md:block hidden top-[7%] left-[-12%]">
           <Circlebox />
         </div>
         <p className="text-center text-orange font-poppins font-normal text-sm sm:text-base md:text-md">
           Frequently Asked Questions
         </p>
-        <h2 className="font-poppins font-extrabold text-[30px] sm:text-[45px] xl:text-xxl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
+        <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
           Have Questions? We’re here to help.
         </h2>
         <div className="flex flex-row h-[69px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative">
@@ -91,7 +91,7 @@ const Faq = () => {
             {accordionData.map((faq, index) => (
               <div
                 key={index}
-                className={`p-6 border-darkblue border-opacity-[24%] text-start ${
+                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] text-start ${
                   activeIndex === index
                     ? "text-golden text-start"
                     : "border-y-[1px]"
@@ -102,7 +102,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -136,7 +136,7 @@ const Faq = () => {
             {accordionData.map((faq, index) => (
               <div
                 key={index}
-                className={`p-6 border-darkblue border-opacity-[24%] ${
+                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
                   activeIndex === index ? "text-golden" : "border-y-[1px]"
                 }`}
               >
@@ -145,7 +145,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -179,7 +179,7 @@ const Faq = () => {
             {accordionData.map((faq, index) => (
               <div
                 key={index}
-                className={`p-6 border-darkblue border-opacity-[24%] ${
+                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
                   activeIndex === index ? "text-golden" : "border-y-[1px]"
                 }`}
               >
@@ -188,7 +188,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-start text-lg ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -222,7 +222,7 @@ const Faq = () => {
             {accordionData.map((faq, index) => (
               <div
                 key={index}
-                className={`p-6 border-darkblue border-opacity-[24%] ${
+                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
                   activeIndex === index ? "text-golden" : "border-y-[1px]"
                 }`}
               >
@@ -231,7 +231,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-start text-lg ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -265,7 +265,7 @@ const Faq = () => {
             {accordionData.map((faq, index) => (
               <div
                 key={index}
-                className={`p-6 border-darkblue border-opacity-[24%] ${
+                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
                   activeIndex === index ? "text-golden" : "border-y-[1px]"
                 }`}
               >
@@ -274,7 +274,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-start text-lg ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
