@@ -1,6 +1,6 @@
-import mobileicon from "../../assets/images/png/phone_icon.png";
-import handsicon from "../../assets/images/png/hands_icon.png";
-import watchicon from "../../assets/images/png/man_watch_icon.png"
+import mobileicon from "../../assets/images/webp/phone_icon.webp";
+import handsicon from "../../assets/images/webp/hands_icon.webp";
+import watchicon from "../../assets/images/webp/man_watch_icon.webp"
 
 
 export const navLink = [

@@ -1,8 +1,8 @@
 import React, { useRef, useState } from 'react';
 import aboutvideo from "../assets/videos/about_video.mp4";
 import videoPoster from "../assets/images/png/video_poster.png";
-import playbtn from "../assets/images/png/play_btn.png";
-import videovec from "../assets/images/png/video_vector.png";
+import playbtn from "../assets/images/webp/play_btn.webp";
+import videovec from "../assets/images/webp/video_vector.webp";
 
 const Aboutus = () => {
     const [isPlaying, setIsPlaying] = useState(false);

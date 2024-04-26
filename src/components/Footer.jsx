@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/images/png/footer-logo.png";
+import logo from "../assets/images/webp/footer_logo.webp";
 import { CopyRight, Facebook, Instagram, Tiktok, Twitter } from "./common/Icon";
 import { Link } from "react-router-dom";
 const Footer = () => {

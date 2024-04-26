@@ -1,7 +1,7 @@
 import React from "react";
 import mobile from "../assets/images/webp/mobiles.webp";
-import lefttriangle from "../assets/images/png/header_left_vector.png";
-import circles from "../assets/images/png/slider_circles.png";
+import lefttriangle from "../assets/images/webp/header_left_vector.webp";
+import circles from "../assets/images/webp/slider_circles.webp";
 import Marquee from "react-fast-marquee";
 const Header = () => {
     return (

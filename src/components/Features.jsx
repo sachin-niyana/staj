@@ -5,9 +5,9 @@ import {
   FeaturecardsData3,
 } from "./common/Helper";
 import { useState } from "react";
-import mapvector from "../assets/images/png/map_view_vec.png";
-import circlevec from "../assets/images/png/instant_payout_vec.png";
-import dottedCircleVec from "../assets/images/png/how_works_vec.png";
+import mapvector from "../assets/images/webp/map_view_vec.webp";
+import circlevec from "../assets/images/webp/instant_payout_vec.webp";
+import dottedCircleVec from "../assets/images/webp/how_works_vec.webp";
 const Features = () => {
   const [activeTab, setActiveTab] = useState("tab1");
 
@@ -20,7 +20,7 @@ const Features = () => {
         <img
           className="absolute z-0 end-[32.5%] top-2 max-w-[40px] md:max-w-[96px]"
           src={dottedCircleVec}
-          alt=""
+          alt="dotted-circles"
         />
         <p className="text-orange ff-poppins text-sm sm:text-base md:text-md text-center">
           Features
@@ -29,9 +29,9 @@ const Features = () => {
           How it works
         </h2>
 
-        <div className="flex sm:flex-row flex-col sm:border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] sm:rounded-[48px] mx-auto max-w-[640px]">
+        <div className="flex sm:flex-row flex-col sm:h-[69px]  sm:border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] sm:rounded-[48px] mx-auto max-w-[640px]">
           <div
-            className={`xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
+            className={`xl:mr-4 px-4 py-1 duration-300 sm:rounded-[100px] lg:py-[14px] ${
               activeTab === "tab1"
                 ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
                 : "bg-white text-darkblue"
@@ -54,15 +54,16 @@ const Features = () => {
               For Artists
             </button>
           </div>
+
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
                 ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
-                : "mr-4 bg-white text-darkblue"
+                : "lg:mr-4 bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab3")}
           >
-            <button className="text-center text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
+            <button className="text-center sm:px-0 sm:py-0  text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
               For Event Organizers
             </button>
           </div>
@@ -77,7 +78,7 @@ const Features = () => {
                 alt="mapvector"
               />
               <img
-                className="absolute top-[-50%] max-w-[215px] start-5"
+                className="absolute top-[-50%] max-w-[100px] xl:max-w-[215px] lg:block hidden start-5"
                 src={circlevec}
                 alt="circle-vectors"
               />
@@ -113,7 +114,7 @@ const Features = () => {
                 alt="mapvector"
               />
               <img
-                className="absolute top-[-50%] max-w-[215px] start-5"
+                className="absolute top-[-50%] max-w-[100px] xl:max-w-[215px] start-5 lg:block hidden"
                 src={circlevec}
                 alt="circle-vectors"
               />
@@ -149,7 +150,7 @@ const Features = () => {
                 alt="mapvector"
               />
               <img
-                className="absolute top-[-50%] max-w-[215px] start-5"
+                className="absolute top-[-50%] max-w-[100px] xl:max-w-[215px] start-5 lg:block hidden"
                 src={circlevec}
                 alt="circle-vectors"
               />
