@@ -57,7 +57,7 @@ const Navbar = () => {
         ></div>
       )}
       <div
-        className={`lg:hidden fixed inset-y-0 left-0 w-full bg-bg-blue z-50 transform ${
+        className={`lg:hidden fixed inset-y-0 left-0 w-full duration-300 bg-bg-blue z-50 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
         } duration-300`}
       >

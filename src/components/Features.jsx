@@ -71,7 +71,7 @@ const Features = () => {
 
         {activeTab === "tab1" && (
           <div>
-            <div className="flex flex-wrap justify-center flex-row mt-[60px] gap-5 lg:gap-0 -mx-3 relative">
+            <div className="flex flex-wrap justify-center lg:justify-start xl:justify-center flex-row mt-[60px] gap-5 lg:gap-0 -mx-3 relative">
               <img
                 className="absolute bottom-[-79px] z-0 end-[-4%] max-w-[134px] "
                 src={mapvector}
@@ -87,7 +87,7 @@ const Features = () => {
                   key={index}
                   className="lg:w-3/12 relative z-10 sm:4/12 sm:6/12 lg:px-3"
                 >
-                  <div className="flex justify-center duration-300 bg-white hover:bg-sky-200 hover:scale-90 cursor-pointer mx-[3px] relative z-30 shadow-[0px_24px_48px_0px_rgba(0,0,0,0.12)] h-full max-w-[338px] min-h-[344px] flex-col px-6 items-center py-8 xl:py-12 rounded-[12px]">
+                  <div className="flex justify-center lg:justify-start xl:justify-center duration-300 bg-white hover:bg-sky-200 hover:scale-90 cursor-pointer mx-[3px] relative z-30 shadow-[0px_24px_48px_0px_rgba(0,0,0,0.12)] h-full max-w-[338px] min-h-[344px] flex-col px-6 items-center py-8 xl:py-12 rounded-[12px]">
                     <img
                       className="max-w-[90px]"
                       src={card.image}
@@ -107,7 +107,7 @@ const Features = () => {
         )}
         {activeTab === "tab2" && (
           <div>
-            <div className="flex flex-wrap justify-center flex-row mt-[60px] gap-5 lg:gap-0 -mx-3 relative">
+            <div className="flex flex-wrap justify-center  flex-row mt-[60px] gap-5 lg:gap-0 -mx-3 relative">
               <img
                 className="absolute bottom-[-79px] z-0 end-[-4%] max-w-[134px]"
                 src={mapvector}
