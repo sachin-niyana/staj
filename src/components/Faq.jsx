@@ -109,7 +109,7 @@ const Faq = () => {
                   className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-start text-lg ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -148,7 +148,7 @@ const Faq = () => {
                   className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-start text-lg ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"

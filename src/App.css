@@ -1,9 +1,9 @@
 nav li a:hover {
   -webkit-text-stroke-width: 0.5px;
 }
-@media(max-width:576px){
-  .video_width{
-    max-width: 363px;
+@media (max-width: 576px) {
+  .video_width {
+    max-width: 353px;
+    min-height: 353px;
   }
-
 }

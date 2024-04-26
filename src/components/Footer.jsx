@@ -55,11 +55,11 @@ const Footer = () => {
               </div>
               <div className="max-w-[480px] md:mt-0 mt-10">
                 <div className="flex min-[1440px]:gap-[90px] md:gap-10 md:justify-start justify-between min-[1440px]:ms-[15px]">
-                  <ul className="ps-0 flex flex-col gap-5">
+                  <ul className="ps-0 flex flex-col gap-4">
                     <li className="font-poppins font-semibold text-lg text-white">
                       Quick Link
                     </li>
-                    <li className="mt-1">
+                    <li className="mt-2">
                       <Link
                         to="/"
                         className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
