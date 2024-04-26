@@ -1,8 +1,9 @@
 import React from "react";
 import logo from "../assets/images/png/footer-logo.png";
-import { Facebook, Instagram, Tiktok, Twitter } from "./common/Icon";
+import { CopyRight, Facebook, Instagram, Tiktok, Twitter } from "./common/Icon";
 import { Link } from "react-router-dom";
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <div className="bg-darkblue">
       <div className="container max-w-[1464px] px-3 mx-auto pt-[90px] pb-[60px]">
@@ -22,16 +23,32 @@ const Footer = () => {
                   do eiusmod tempor incididunt ut labore.
                 </p>
                 <div className="flex md:justify-start justify-center gap-[18px] mt-9">
-                  <Link to="https://www.facebook.com/" target="_blank">
+                  <Link
+                    className="hover:translate-y-[-5px] duration-300"
+                    to="https://www.facebook.com/"
+                    target="_blank"
+                  >
                     <Facebook />
                   </Link>
-                  <Link to="https://www.facebook.com/" target="_blank">
+                  <Link
+                    className="hover:translate-y-[-5px] duration-300"
+                    to="https://twitter.com/"
+                    target="_blank"
+                  >
                     <Twitter />
                   </Link>
-                  <Link to="https://www.facebook.com/" target="_blank">
+                  <Link
+                    className="hover:translate-y-[-5px] duration-300"
+                    to="https://www.instagram.com/accounts/login/?hl=en"
+                    target="_blank"
+                  >
                     <Instagram />
                   </Link>
-                  <Link to="https://www.facebook.com/" target="_blank">
+                  <Link
+                    className="hover:translate-y-[-5px] duration-300"
+                    to="https://www.tiktok.com/"
+                    target="_blank"
+                  >
                     <Tiktok />
                   </Link>
                 </div>
@@ -43,27 +60,42 @@ const Footer = () => {
                       Quick Link
                     </li>
                     <li className="mt-1">
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Home
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Features
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         About
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         FAQ
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Contact us
                       </Link>
                     </li>
@@ -73,17 +105,26 @@ const Footer = () => {
                       Resources
                     </li>
                     <li className="mt-1">
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Download Staj App
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Privacy Policy
                       </Link>
                     </li>
                     <li>
-                      <Link className="font-poppins font-normal text-md text-white">
+                      <Link
+                        to="/"
+                        className="font-poppins hover:text-golden duration-300 font-normal text-md text-white"
+                      >
                         Terms of Service
                       </Link>
                     </li>
@@ -103,6 +144,7 @@ const Footer = () => {
                 <input
                   type="email"
                   placeholder="Enter your email"
+                  name="email"
                   className="ps-3.5 bg-transparent placeholder-white font-poppins font-normal text-md max-w-[240px] w-full outline-none text-white"
                 />
                 <button className="font-poppins min-[480px]:block hidden whitespace-nowrap font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
@@ -116,6 +158,13 @@ const Footer = () => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="flex justify-center items-center mt-[102px]">
+          <CopyRight />
+          <p className="text-center font-poppins font-normal text-md text-white">
+            {currentYear} <span className="text-golden">Staj Inc.</span> All
+            Rights Reserved.
+          </p>
         </div>
       </div>
     </div>
