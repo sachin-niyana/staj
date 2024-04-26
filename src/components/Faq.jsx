@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { accordionData } from "./common/Helper";
 import { HiPlus } from "react-icons/hi2";
-import { FaRegWindowMinimize } from "react-icons/fa6";
-import { Trianglebox, Trianglebox2 } from "./common/Icon";
+import { HiOutlineMinus } from "react-icons/hi";
+import { Circlebox, Trianglebox, Trianglebox2 } from "./common/Icon";
 
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const handleAccordionToggle = (index) => {
     setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
@@ -24,77 +24,70 @@ const Faq = () => {
         <div className="absolute bottom-[20%] right-[-5%]">
           <Trianglebox2 />
         </div>
+        <div className="absolute top-[7%] left-[-12%]">
+          <Circlebox />
+        </div>
         <p className="text-center text-orange font-poppins font-normal text-md">
           Frequently Asked Questions
         </p>
         <h2 className="font-poppins font-extrabold text-xxl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
           Have Questions? We’re here to help.
         </h2>
-        <div className="flex flex-row h-[69px] overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px]">
-          <div
+        <div className="flex flex-row h-[69px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative">
+          <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab1"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
-                : "bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
             }`}
             onClick={() => handleTabChange("tab1")}
           >
-            <button className="text-center text-md ff-poppins font-semibold whitespace-nowrap text-darkblue">
-              General Questions
-            </button>
-          </div>
-          <div
+            General Questions
+          </button>
+          <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
-                : "bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
             }`}
             onClick={() => handleTabChange("tab2")}
           >
-            <button className="text-center text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
-              Payments & Transactions
-            </button>
-          </div>
-          <div
-            className={`px-4 py-1 duration-300 lg:py-[14px] ${
+            Payments & Transactions
+          </button>
+          <button
+            className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
-                : "bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
             }`}
             onClick={() => handleTabChange("tab3")}
           >
-            <button className="text-center text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
-              Accounts & Profiles
-            </button>
-          </div>
-          <div
-            className={`px-4 py-1 duration-300 lg:py-[14px] ${
+            Accounts & Profiles
+          </button>
+          <button
+            className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab4"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
-                : " bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
             }`}
             onClick={() => handleTabChange("tab4")}
           >
-            <button className="text-center text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
-              Technical Support
-            </button>
-          </div>
-          <div
-            className={`px-4 py-1 duration-300 lg:py-[14px] ${
+            Technical Support
+          </button>
+          <button
+            className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab5"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
-                : "bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
             }`}
             onClick={() => handleTabChange("tab5")}
           >
-            <button className="text-center text-md ff-poppins whitespace-nowrap font-semibold  text-darkblue">
-              Creating & Finding Events
-            </button>
-          </div>
+            Creating & Finding Events
+          </button>
         </div>
 
         {activeTab === "tab1" && (
-          <div className="max-w-[950px] mx-auto mt-9">
+          <div className="max-w-[950px] mx-auto mt-9 relative">
             {accordionData.map((faq, index) => (
               <div
                 key={index}
@@ -106,10 +99,10 @@ const Faq = () => {
               >
                 <button
                   onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
+                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-lg text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -118,9 +111,13 @@ const Faq = () => {
                     {faq.heading}
                   </p>
                   {activeIndex === index ? (
-                    <FaRegWindowMinimize className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiOutlineMinus className="w-6 h-6" />
+                    </div>
                   ) : (
-                    <HiPlus className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiPlus className="w-6 h-6" />
+                    </div>
                   )}
                 </button>
                 {activeIndex === index && (
@@ -135,7 +132,7 @@ const Faq = () => {
           </div>
         )}
         {activeTab === "tab2" && (
-          <div className="max-w-[950px] mx-auto mt-9">
+          <div className="max-w-[950px] mx-auto mt-9 relative">
             {accordionData.map((faq, index) => (
               <div
                 key={index}
@@ -145,10 +142,10 @@ const Faq = () => {
               >
                 <button
                   onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
+                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-lg text-start ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -157,9 +154,13 @@ const Faq = () => {
                     {faq.heading}
                   </p>
                   {activeIndex === index ? (
-                    <FaRegWindowMinimize className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiOutlineMinus className="w-6 h-6" />
+                    </div>
                   ) : (
-                    <HiPlus className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiPlus className="w-6 h-6" />
+                    </div>
                   )}
                 </button>
                 {activeIndex === index && (
@@ -174,7 +175,7 @@ const Faq = () => {
           </div>
         )}
         {activeTab === "tab3" && (
-          <div className="max-w-[950px] mx-auto mt-9">
+          <div className="max-w-[950px] mx-auto mt-9 relative">
             {accordionData.map((faq, index) => (
               <div
                 key={index}
@@ -184,7 +185,7 @@ const Faq = () => {
               >
                 <button
                   onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
+                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
                     className={`font-poppins text-start text-lg ${
@@ -196,9 +197,13 @@ const Faq = () => {
                     {faq.heading}
                   </p>
                   {activeIndex === index ? (
-                    <FaRegWindowMinimize className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiOutlineMinus className="w-6 h-6" />
+                    </div>
                   ) : (
-                    <HiPlus className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiPlus className="w-6 h-6" />
+                    </div>
                   )}
                 </button>
                 {activeIndex === index && (
@@ -213,7 +218,7 @@ const Faq = () => {
           </div>
         )}
         {activeTab === "tab4" && (
-          <div className="max-w-[950px] mx-auto mt-9">
+          <div className="max-w-[950px] mx-auto mt-9 relative">
             {accordionData.map((faq, index) => (
               <div
                 key={index}
@@ -223,7 +228,7 @@ const Faq = () => {
               >
                 <button
                   onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
+                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
                     className={`font-poppins text-start text-lg ${
@@ -235,9 +240,13 @@ const Faq = () => {
                     {faq.heading}
                   </p>
                   {activeIndex === index ? (
-                    <FaRegWindowMinimize className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiOutlineMinus className="w-6 h-6" />
+                    </div>
                   ) : (
-                    <HiPlus className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiPlus className="w-6 h-6" />
+                    </div>
                   )}
                 </button>
                 {activeIndex === index && (
@@ -252,7 +261,7 @@ const Faq = () => {
           </div>
         )}
         {activeTab === "tab5" && (
-          <div className="max-w-[950px] mx-auto mt-9">
+          <div className="max-w-[950px] mx-auto mt-9 relative">
             {accordionData.map((faq, index) => (
               <div
                 key={index}
@@ -262,7 +271,7 @@ const Faq = () => {
               >
                 <button
                   onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
+                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
                     className={`font-poppins text-start text-lg ${
@@ -274,9 +283,13 @@ const Faq = () => {
                     {faq.heading}
                   </p>
                   {activeIndex === index ? (
-                    <FaRegWindowMinimize className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiOutlineMinus className="w-6 h-6" />
+                    </div>
                   ) : (
-                    <HiPlus className="w-6 h-6" />
+                    <div className="mt-1.5">
+                      <HiPlus className="w-6 h-6" />
+                    </div>
                   )}
                 </button>
                 {activeIndex === index && (
