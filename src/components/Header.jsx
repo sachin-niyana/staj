@@ -38,7 +38,6 @@ const Header = () => {
                                 <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">20 Millions+Templates</p>
                                 <img class="max-w-[64px] mx-10" src={circles} alt="circles" />
                                 <p class="ff-poppins text-lg text-white whitespace-nowrap font-medium">Single Click Editor</p>
-
                             </div>
                         </div> </Marquee>
 

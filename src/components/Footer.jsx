@@ -147,12 +147,12 @@ const Footer = () => {
                   name="email"
                   className="min-[480px]:ps-3.5 px-3 bg-transparent placeholder-white font-poppins font-normal text-md min-[480px]:max-w-[240px] w-full outline-none text-white"
                 />
-                <button className="font-poppins min-[480px]:block hidden whitespace-nowrap font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
+                <button className="font-poppins hover:text-white hover:bg-darkblue duration-300 min-[480px]:block hidden whitespace-nowrap font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
                   Get started{" "}
                 </button>
               </div>
               <div className="flex justify-center mx-auto min-[480px]:hidden mt-5">
-                <button className="font-poppins whitespace-nowrap font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
+                <button className="font-poppins whitespace-nowrap  hover:text-white hover:bg-darkblue duration-300 font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
                   Get started{" "}
                 </button>
               </div>
