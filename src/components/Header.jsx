@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 const Header = () => {
     return (
         <>
-            <div className="bg-skyblue overflow-x-">
+            <div className="bg-skyblue" id="#Home">
                 <div className="max-w-[1464px] px-3 mx-auto">
                     <div className="flex md:flex-row flex-col-reverse items-center md:items-start md:justify-between pt-[40px] md:pt-[58px]">
                         <div className="flex flex-col items-center md:items-start -mt-7 md:mt-[50px] xl:mt-[153px] relative">
