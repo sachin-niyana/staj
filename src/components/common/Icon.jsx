@@ -94,6 +94,28 @@ export const Trianglebox = () => {
     </svg>
   );
 };
+export const Trianglebox2 = () => {
+  return (
+    <svg
+      width="216"
+      height="221"
+      viewBox="0 0 216 221"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <g opacity="0.06">
+        <path
+          d="M214.719 68.8571L88.1712 154.03L76.3901 1.93542L214.719 68.8571Z"
+          fill="#373F4C"
+        />
+        <path
+          d="M199.334 98.5149L198.639 97.4838L73.8887 181.437L62.4515 33.6549L198.811 99.6403L199.334 98.5149L198.639 97.4838L199.334 98.5149L199.88 97.4005L59.6155 29.5312L71.7289 185.905L201.849 98.3369L199.88 97.4005L199.334 98.5149Z"
+          fill="#373F4C"
+        />
+      </g>
+    </svg>
+  );
+};
 export const CopyRight = () => {
   return (
     <svg
