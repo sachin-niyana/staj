@@ -4,12 +4,12 @@ import alisa from "../assets/images/webp/alisa.webp";
 import { DotedBox, LineBox, Linkedin, Twitter } from "./common/Icon";
 const OurTeam = () => {
   return (
-    <div className="bg-white">
-      <div className="container max-w-[1464px] mx-auto px-3 pt-12 sm:pt-[60px] lg:pt-[80px] xl:pt-[120px]  pb-12 sm:pb-[60px] lg:pb-[80px] xl:pb-[120px]">
-        <p className="text-center text-orange font-poppins font-normal text-sm sm:text-base md text-base:lg:text-md">
+    <div className="bg-white" id="ContactUs">
+      <div className="container max-w-[1464px] mx-auto px-3 pt-[120px] pb-[157px]">
+        <p className="text-center text-orange font-poppins font-normal text-md">
           Team
         </p>
-        <h2 className="font-poppins font-extrabold text-[30px] sm:text-[45px] xl:text-xxl text-darkblue text-center mt-3 leading-[113%]">
+        <h2 className="font-poppins font-extrabold text-xxl text-darkblue text-center mt-3 leading-[113%]">
           Our team
         </h2>
         <div className="flex lg:flex-row flex-col justify-center gap-8 items-center mt-[60px]">
@@ -20,15 +20,15 @@ const OurTeam = () => {
             <div className=" bg-white rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img
-                  className="lg:w-[108px] w-[90px] h-[90px] lg:h-[108px]"
+                  className="w-[108px] h-[108px]"
                   src={julian}
                   alt="julian"
                 />
                 <div className="flex flex-col">
-                  <p className="font-poppins font-semibold  text-[25px] lg:text-xl text-darkblue">
+                  <p className="font-poppins font-semibold text-xl text-darkblue">
                     Julian Elysian
                   </p>
-                  <p className="font-poppins font-normal sm:text-start text-center text-base lg:text-md text-darkblue">
+                  <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue">
                     Co-Founder & CEO
                   </p>
                 </div>
@@ -38,7 +38,7 @@ const OurTeam = () => {
                   <Linkedin />
                   <Twitter />
                 </div>
-                <p className="font-poppins font-normal sm:text-start text-center text-sm sm:text-base lg:text-md text-darkblue leading-[144%]">
+                <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
                   available, but the majority have suffered the alteration in
                   some form, by injected humour, or let randomised words which
@@ -54,12 +54,12 @@ const OurTeam = () => {
             </div>
             <div className=" bg-white rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
-                <img className="lg:w-[108px] w-[90px] h-[90px] lg:h-[108px]" src={alisa} alt="alisa" />
+                <img className="w-[108px] h-[108px]" src={alisa} alt="alisa" />
                 <div className="flex flex-col">
-                  <p className="font-poppins font-semibold  text-[25px] lg:text-xl text-darkblue">
+                  <p className="font-poppins font-semibold text-xl text-darkblue">
                     Alisa Elysian
                   </p>
-                  <p className="font-poppins font-normal sm:text-start text-center text-base lg:text-md text-darkblue">
+                  <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue">
                     Co-Founder & CEO
                   </p>
                 </div>
@@ -69,7 +69,7 @@ const OurTeam = () => {
                   <Linkedin />
                   <Twitter />
                 </div>
-                <p className="font-poppins font-normal sm:text-start text-center text-sm sm:text-base lg:text-md text-darkblue leading-[144%]">
+                <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
                   available, but the majority have suffered the alteration in
                   some form, by injected humour, or let randomised words which

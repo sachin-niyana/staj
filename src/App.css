@@ -7,3 +7,6 @@ nav li a:hover {
     min-height: 353px;
   }
 }
+html {
+  scroll-behavior: smooth;
+}

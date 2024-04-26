@@ -6,14 +6,16 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import OurTeam from "./components/OurTeam";
 import Faq from "./components/Faq";
+import BackToTop from "./components/BAckToTop";
 function App() {
   return (
     <>
       <div className="overflow-hidden">
+        <BackToTop />
         <Navbar />
         <Header />
         <Features />
-        <Aboutus/>
+        <Aboutus />
         <OurTeam />
         <Faq />
         <Footer />
