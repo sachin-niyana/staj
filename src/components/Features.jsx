@@ -1,9 +1,9 @@
 import React from 'react'
 import { FeaturecardsData, FeaturecardsData2, FeaturecardsData3 } from './common/Helper';
 import { useState } from 'react';
-import mapvector from "../assets/images/png/map_view_vec.png";
-import circlevec from "../assets/images/png/instant_payout_vec.png";
-import dottedCircleVec from "../assets/images/png/how_works_vec.png";
+import mapvector from "../assets/images/webp/map_view_vec.webp";
+import circlevec from "../assets/images/webp/instant_payout_vec.webp";
+import dottedCircleVec from "../assets/images/webp/how_works_vec.webp";
 const Features = () => {
     const [activeTab, setActiveTab] = useState('tab1');
 

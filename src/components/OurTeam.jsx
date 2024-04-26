@@ -1,6 +1,6 @@
 import React from "react";
-import julian from "../assets/images/png/julian.png";
-import alisa from "../assets/images/png/alisa.png";
+import julian from "../assets/images/webp/julian.webp";
+import alisa from "../assets/images/webp/alisa.webp";
 import { DotedBox, LineBox, Linkedin, Twitter } from "./common/Icon";
 const OurTeam = () => {
   return (
