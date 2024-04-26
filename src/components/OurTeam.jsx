@@ -2,6 +2,7 @@ import React from "react";
 import julian from "../assets/images/webp/julian.webp";
 import alisa from "../assets/images/webp/alisa.webp";
 import { DotedBox, LineBox, Linkedin, Twitter } from "./common/Icon";
+import { Link } from "react-router-dom";
 const OurTeam = () => {
   return (
     <div className="bg-white">
@@ -9,7 +10,7 @@ const OurTeam = () => {
         <p className="text-center text-orange font-poppins font-normal text-md">
           Team
         </p>
-        <h2 className="font-poppins font-extrabold text-xxl text-darkblue text-center mt-3 leading-[113%]">
+        <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue text-center mt-3 leading-[113%]">
           Our team
         </h2>
         <div className="flex lg:flex-row flex-col justify-center gap-8 items-center mt-[60px]">
@@ -17,7 +18,7 @@ const OurTeam = () => {
             <div className="absolute md:block hidden bottom-[-10%] left-[-8%]">
               <DotedBox />
             </div>
-            <div className=" bg-white rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white hover:scale-95 duration-300 rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img
                   className="w-[108px] h-[108px]"
@@ -25,7 +26,7 @@ const OurTeam = () => {
                   alt="julian"
                 />
                 <div className="flex flex-col">
-                  <p className="font-poppins font-semibold text-xl text-darkblue">
+                  <p className="font-poppins font-semibold md:text-xl text-lg text-darkblue">
                     Julian Elysian
                   </p>
                   <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue">
@@ -34,9 +35,13 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
-                <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto lg:ms-[21px]">
-                  <Linkedin />
-                  <Twitter />
+                <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
+                  <Link to="https://in.linkedin.com/" target="_blank">
+                    <Linkedin />
+                  </Link>
+                  <Link to="https://twitter.com/" target="_blank">
+                    <Twitter />
+                  </Link>
                 </div>
                 <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
@@ -52,11 +57,11 @@ const OurTeam = () => {
             <div className="absolute md:block hidden top-[-31.5%] right-[-11%]">
               <LineBox />
             </div>
-            <div className=" bg-white rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
+            <div className=" bg-white hover:scale-95 duration-300 rounded-xl xl:py-12 py-8 px-4 xl:px-9 max-w-[704px] shadow-[0px_24px_40px_0px_rgba(0,0,0,0.07)] relative">
               <div className="flex sm:flex-row flex-col justify-start gap-6 items-center">
                 <img className="w-[108px] h-[108px]" src={alisa} alt="alisa" />
                 <div className="flex flex-col">
-                  <p className="font-poppins font-semibold text-xl text-darkblue">
+                  <p className="font-poppins font-semibold md:text-xl text-lg text-darkblue">
                     Alisa Elysian
                   </p>
                   <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue">
@@ -65,9 +70,13 @@ const OurTeam = () => {
                 </div>
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
-                <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto lg:ms-[21px]">
-                  <Linkedin />
-                  <Twitter />
+                <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
+                  <Link to="https://in.linkedin.com/" target="_blank">
+                    <Linkedin />
+                  </Link>
+                  <Link to="https://twitter.com/" target="_blank">
+                    <Twitter />
+                  </Link>
                 </div>
                 <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
