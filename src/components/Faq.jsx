@@ -30,11 +30,11 @@ const Faq = () => {
         <h2 className="font-poppins font-extrabold text-xxl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
           Have Questions? We’re here to help.
         </h2>
-        <div className="flex flex-row overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px]">
+        <div className="flex flex-row h-[69px] overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px]">
           <div
-            className={`xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
+            className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab1"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
                 : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab1")}
@@ -44,9 +44,9 @@ const Faq = () => {
             </button>
           </div>
           <div
-            className={` xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
+            className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
                 : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab2")}
@@ -58,8 +58,8 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
-                : "mr-4 bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
+                : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab3")}
           >
@@ -70,8 +70,8 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab4"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
-                : "mr-4 bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
+                : " bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab4")}
           >
@@ -82,8 +82,8 @@ const Faq = () => {
           <div
             className={`px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab5"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-darkblue"
-                : "mr-4 bg-white text-darkblue"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white"
+                : "bg-white text-darkblue"
             }`}
             onClick={() => handleTabChange("tab5")}
           >
@@ -125,7 +125,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md text-darkblue">
+                    <p className="font-poppins font-normal max-w-[804px] text-left text-md text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -164,7 +164,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md text-darkblue">
+                    <p className="font-poppins font-normal text-md max-w-[804px] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -187,7 +187,7 @@ const Faq = () => {
                   className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-start text-lg ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -203,7 +203,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md text-darkblue">
+                    <p className="font-poppins text-start max-w-[804px] font-normal text-md text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -226,7 +226,7 @@ const Faq = () => {
                   className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-start text-lg ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -242,7 +242,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md text-darkblue">
+                    <p className="font-poppins text-left font-normal text-md max-w-[804px] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -265,7 +265,7 @@ const Faq = () => {
                   className="flex justify-between items-center border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins text-lg ${
+                    className={`font-poppins text-start text-lg ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -281,7 +281,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md text-darkblue">
+                    <p className="font-poppins text-start font-normal text-md max-w-[804px] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
