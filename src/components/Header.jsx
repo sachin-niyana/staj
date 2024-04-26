@@ -25,7 +25,7 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-                <div className="bg-[rgba(250,229,229)] h-[66px] mt-[70px] lg:-mt-[75px] md:mt-[-30px]  z-2">
+                <div className="bg-[rgba(250,229,229)] h-[66px] mt-[70px] lg:-mt-[69px] md:mt-[-30px]  z-2">
                     <div className="bg-orange 2xl:hidden z-3 top-0 flex items-center justify-center w-[101%] -mx-1 h-[66px] opacity-100 -rotate-2">
                         <Marquee>   <div class="scroll-container">
                             <div class="scroll-content flex items-center justify-center">
