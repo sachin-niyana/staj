@@ -6,7 +6,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return (
     <div className="bg-darkblue">
-      <div className="container max-w-[1464px] px-3 mx-auto pt-[90px] pb-[60px]">
+      <div className="container max-w-[1464px] px-3 mx-auto md:pt-[90px] md:pb-[60px] py-12">
         <div>
           <div className="flex xl:flex-row flex-col justify-between">
             <div className="flex md:flex-row flex-col justify-between min-[1440px]:w-[62%] xl:w-[60%] xl:mx-0 mx-auto">
@@ -18,7 +18,7 @@ const Footer = () => {
                     alt="footer-logo"
                   />
                 </div>
-                <p className="font-poppins md:text-start text-center font-normal text-white text-md mt-6">
+                <p className="font-poppins md:text-start text-center font-normal leading-[144%] text-white text-md mt-6">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                   do eiusmod tempor incididunt ut labore.
                 </p>
@@ -100,7 +100,7 @@ const Footer = () => {
                       </Link>
                     </li>
                   </ul>
-                  <ul className="ps-0 flex flex-col gap-5">
+                  <ul className="ps-0 flex flex-col gap-4">
                     <li className="font-poppins font-semibold text-lg text-white ">
                       Resources
                     </li>
@@ -136,7 +136,7 @@ const Footer = () => {
               <p className="font-poppins font-semibold xl:text-start text-center text-lg text-white">
                 Join our email updates list
               </p>
-              <p className="font-poppins font-normal xl:text-start text-center text-md text-white mt-[18px]">
+              <p className="font-poppins font-normal xl:text-start text-center leading-[144%] text-md text-white mt-[18px]">
                 Stay updated with Staj to receive news about upcoming events
                 near you.
               </p>
@@ -145,7 +145,7 @@ const Footer = () => {
                   type="email"
                   placeholder="Enter your email"
                   name="email"
-                  className="ps-3.5 bg-transparent placeholder-white font-poppins font-normal text-md max-w-[240px] w-full outline-none text-white"
+                  className="min-[480px]:ps-3.5 px-3 bg-transparent placeholder-white font-poppins font-normal text-md min-[480px]:max-w-[240px] w-full outline-none text-white"
                 />
                 <button className="font-poppins min-[480px]:block hidden whitespace-nowrap font-bold text-base leading-[100%] text-darkblue bg-golden rounded-[36px] py-[19px] px-[44px]">
                   Get started{" "}
@@ -159,7 +159,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="flex justify-center items-center mt-[102px]">
+        <div className="flex justify-center items-center lg:mt-[102px] sm:mt-18 mt-14">
           <CopyRight />
           <p className="text-center font-poppins font-normal text-md text-white">
             {currentYear} <span className="text-golden">Staj Inc.</span> All

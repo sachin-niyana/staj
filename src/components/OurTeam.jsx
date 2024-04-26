@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 const OurTeam = () => {
   return (
     <div className="bg-white" id="ContactUs">
-      <div className="container max-w-[1464px] mx-auto px-3 pt-[120px] pb-[157px]">
+      <div className="container max-w-[1464px] mx-auto px-3 lg:pt-[120px] lg:pb-[157px] md:py-20 sm:py-[60px] py-12">
         <p className="text-center text-orange font-poppins font-normal text-md">
           Team
         </p>
@@ -36,10 +36,18 @@ const OurTeam = () => {
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
-                  <Link to="https://in.linkedin.com/" target="_blank" className="hover:translate-y-[-5px] duration-300">
+                  <Link
+                    to="https://in.linkedin.com/"
+                    target="_blank"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
                     <Linkedin />
                   </Link>
-                  <Link to="https://twitter.com/" target="_blank" className="hover:translate-y-[-5px] duration-300">
+                  <Link
+                    to="https://twitter.com/"
+                    target="_blank"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
                     <Twitter />
                   </Link>
                 </div>
@@ -71,10 +79,18 @@ const OurTeam = () => {
               </div>
               <div className="flex sm:flex-row flex-col-reverse justify-start sm:gap-[45px] gap-8 items-start mt-1.5">
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
-                  <Link to="https://in.linkedin.com/" target="_blank" className="hover:translate-y-[-5px] duration-300">
+                  <Link
+                    to="https://in.linkedin.com/"
+                    target="_blank"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
                     <Linkedin />
                   </Link>
-                  <Link to="https://twitter.com/" target="_blank" className="hover:translate-y-[-5px] duration-300">
+                  <Link
+                    to="https://twitter.com/"
+                    target="_blank"
+                    className="hover:translate-y-[-5px] duration-300"
+                  >
                     <Twitter />
                   </Link>
                 </div>

@@ -17,7 +17,7 @@ const Faq = () => {
   };
   return (
     <div className="bg-white" id="FAQ">
-      <div className="container max-w-[1464px] mx-auto px-3 pb-[120px] relative">
+      <div className="container max-w-[1464px] mx-auto px-3 lg:pb-[120px] lg:pt-0 md:py-20 sm:py-[60px] py-12 relative">
         <div className="absolute md:block hidden right-[10%]">
           <Trianglebox />
         </div>
@@ -33,12 +33,12 @@ const Faq = () => {
         <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
           Have Questions? We’re here to help.
         </h2>
-        <div className="flex flex-row h-[69px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-[60px] items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative">
+        <div className="flex flex-row h-[60px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-9 items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative">
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab1"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab1")}
           >
@@ -47,8 +47,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab2")}
           >
@@ -57,8 +57,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab3")}
           >
@@ -67,8 +67,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab4"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab4")}
           >
@@ -77,8 +77,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab5"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap"
+                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab5")}
           >
@@ -102,7 +102,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -122,7 +122,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal max-w-[804px] text-left text-md text-darkblue">
+                    <p className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -145,7 +145,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -165,7 +165,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md max-w-[804px] text-darkblue">
+                    <p className="font-poppins font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -188,7 +188,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -208,7 +208,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins text-start max-w-[804px] font-normal text-md text-darkblue">
+                    <p className="font-poppins text-start max-w-[804px] leading-[144%] font-normal text-md text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -231,7 +231,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -251,7 +251,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins text-left font-normal text-md max-w-[804px] text-darkblue">
+                    <p className="font-poppins text-left font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
@@ -274,7 +274,7 @@ const Faq = () => {
                   className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
                 >
                   <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start ${
+                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
                       activeIndex === index
                         ? "text-golden font-semibold"
                         : "text-black font-normal"
@@ -294,7 +294,7 @@ const Faq = () => {
                 </button>
                 {activeIndex === index && (
                   <div className="mt-[18px]">
-                    <p className="font-poppins text-start font-normal text-md max-w-[804px] text-darkblue">
+                    <p className="font-poppins text-start font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
                       {faq.peragraph}
                     </p>
                   </div>
