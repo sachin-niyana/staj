@@ -13,7 +13,7 @@ const OurTeam = () => {
         <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue text-center mt-3 leading-[113%]">
           Our team
         </h2>
-        <div className="flex lg:flex-row flex-col justify-center gap-8 items-center mt-[60px]">
+        <div className="flex lg:flex-row flex-col justify-center gap-8 items-center pt-8 md:mt-[60px]">
           <div className="relative">
             <div className="absolute md:block hidden bottom-[-10%] left-[-8%]">
               <DotedBox />
@@ -51,7 +51,7 @@ const OurTeam = () => {
                     <Twitter />
                   </Link>
                 </div>
-                <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
+                <p className="font-poppins font-normal sm:text-start text-center text-base sm:text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
                   available, but the majority have suffered the alteration in
                   some form, by injected humour, or let randomised words which
@@ -94,7 +94,7 @@ const OurTeam = () => {
                     <Twitter />
                   </Link>
                 </div>
-                <p className="font-poppins font-normal sm:text-start text-center text-md text-darkblue leading-[144%]">
+                <p className="font-poppins font-normal sm:text-start text-center text-base sm:text-md text-darkblue leading-[144%]">
                   There are many variations of passages of Lorem is a Ipsum
                   available, but the majority have suffered the alteration in
                   some form, by injected humour, or let randomised words which

@@ -52,14 +52,14 @@ const Navbar = () => {
       </div>
       {isSidebarOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black z-50"
+          className="lg:hidden fixed inset-0 bg-black duration-300 z-50"
           onClick={sidebarHandler}
         ></div>
       )}
       <div
         className={`lg:hidden fixed inset-y-0 left-0 w-full bg-bg-blue z-50 transform ${
           isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-        } transition duration-300 ease-in-out`}
+        } duration-300`}
       >
         <div className="p-4 min-h-screen flex flex-col justify-center items-center">
           <button

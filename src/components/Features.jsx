@@ -22,16 +22,16 @@ const Features = () => {
           src={dottedCircleVec}
           alt="dotted-circles"
         />
-        <p className="text-orange ff-poppins text-sm sm:text-base md:text-md text-center">
+        <p className="text-orange font-normal ff-poppins text-sm sm:text-base md:text-md text-center">
           Features
         </p>
         <h2 className="text-center text-darkblue ff-poppins font-bold text-[30px] sm:text-[45px] xl:text-xxl relative z-10">
           How it works
         </h2>
 
-        <div className="flex sm:flex-row flex-col sm:h-[69px]  sm:border gap-5 sm:gap-0 justify-between py-[6px] mt-6 sm:mt-[60px] items-center px-[6px] border-[#d7d7d7] sm:rounded-[48px] mx-auto max-w-[640px]">
+        <div className="flex flex-row sm:h-[60px] overflow-x-scroll sm:border gap-5 sm:gap-0 justify-between py-[6px] mt-6 sm:mt-[60px] items-center px-[6px] border-[#d7d7d7] sm:rounded-[48px] mx-auto max-w-[640px]">
           <div
-            className={`xl:mr-4 px-4 py-1 duration-300 sm:rounded-[100px] lg:py-[14px] ${
+            className={`xl:mr-4 px-4 py-1 h-[48px] flex items-center duration-300 sm:rounded-[100px] lg:py-[14px] ${
               activeTab === "tab1"
                 ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
                 : "bg-white text-darkblue"
@@ -43,7 +43,7 @@ const Features = () => {
             </button>
           </div>
           <div
-            className={` xl:mr-4 px-4 py-1 duration-300 lg:py-[14px] ${
+            className={` xl:mr-4 px-4  h-[48px] flex items-center py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
                 ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
                 : "bg-white text-darkblue"
@@ -56,7 +56,7 @@ const Features = () => {
           </div>
 
           <div
-            className={`px-4 py-1 duration-300 lg:py-[14px] ${
+            className={`px-4 py-1 duration-300  h-[48px] flex items-center lg:py-[14px] ${
               activeTab === "tab3"
                 ? "text-center text-md ff-poppins font-semibold py-[14px] ps-10 lg:ps-[63px] rounded-[100px] pe-10 lg:pe-[57px] bg-golden text-darkblue"
                 : "lg:mr-4 bg-white text-darkblue"
@@ -96,7 +96,7 @@ const Features = () => {
                     <p className="ff-poppins font-semibold text-darkblue xl:mt-9 mt-5 text-[20px] xl:text-lg">
                       {card.title}
                     </p>
-                    <p className="mt-2 xl:mt-3 ff-poppins fs-md text-center max-w-[260px]">
+                    <p className="mt-2 xl:mt-3 ff-poppins fs-md font-normal text-center max-w-[260px]">
                       {card.description}
                     </p>
                   </div>
@@ -132,7 +132,7 @@ const Features = () => {
                     <p className="ff-poppins font-semibold text-darkblue xl:mt-9 mt-5 text-[20px] xl:text-lg">
                       {card.title}
                     </p>
-                    <p className="mt-2 xl:mt-3 ff-poppins fs-md text-center max-w-[260px]">
+                    <p className="mt-2 xl:mt-3 ff-poppins fs-md font-normal text-center max-w-[260px]">
                       {card.description}
                     </p>
                   </div>
@@ -168,7 +168,7 @@ const Features = () => {
                     <p className="ff-poppins font-semibold text-darkblue xl:mt-9 mt-5 text-[20px] xl:text-lg">
                       {card.title}
                     </p>
-                    <p className="mt-2 xl:mt-3 ff-poppins fs-md text-center max-w-[260px]">
+                    <p className="mt-2 xl:mt-3 ff-poppins fs-md font-normal text-center max-w-[260px]">
                       {card.description}
                     </p>
                   </div>

@@ -10,12 +10,12 @@ const Header = () => {
                 <div className="max-w-[1464px] px-3 mx-auto">
                     <div className="flex md:flex-row flex-col-reverse items-center md:items-start md:justify-between pt-[40px] md:pt-[58px]">
                         <div className="flex flex-col items-center md:items-start -mt-7 md:mt-[50px] xl:mt-[153px] relative">
-                            <img className="max-w-[161px] absolute start-[-26%] top-[20%] sm:block hidden" src={lefttriangle} alt="vector" />
+                            <img className="max-w-[106px] absolute start-[-18%] top-[22%] sm:block hidden" src={lefttriangle} alt="vector" />
                             <h1 className="ff-poppins font-bold text-[32px] sm:text-[38px] md:text-start text-center lg:text-[45px] xl:text-xxl text-darkblue md:max-w-[484px] xl:max-w-[640px] leading-[113%]">
                                 Easily find arts events and
                                 <span className="text-golden"> support local artists</span>
                             </h1>
-                            <p className="ff-poppins text-dakblue fs-md max-w-[640px] md:max-w-[570px] pt-4 md:text-start text-center sm:text-md text-sm leading-[144%] lg:pt-[18px]">A brand new way to explore the arts in your city. Currently in beta, exclusively available for iPhone users - download and get started today!</p>
+                            <p className="ff-poppins text-dakblue fs-md max-w-[640px] md:max-w-[570px] xl:max-w-[640px] pt-4 md:text-start text-center sm:text-md text-sm leading-[144%] lg:pt-[18px]">A brand new way to explore the arts in your city. Currently in beta, exclusively available for iPhone users - download and get started today!</p>
                             <button className="bg-golden mx-auto md:mx-0 block font-poppins text-base lg:h-[60px] hover:bg-darkblue hover:text-white duration-300 w-[200px] lg:w-[212px] font-bold capitalize py-4 lg:py-5 px-7 lg:px-10 rounded-[30px] mt-5 xl:mt-[60px] text-darkblue">
                                 DOWNLOAD APP
                             </button>
