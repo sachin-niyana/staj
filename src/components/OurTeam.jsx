@@ -38,12 +38,14 @@ const OurTeam = () => {
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
                   <Link
                     to="https://in.linkedin.com/"
+                    target="_blank"
                     className="hover:translate-y-[-5px] duration-300"
                   >
                     <Linkedin />
                   </Link>
                   <Link
                     to="https://twitter.com/"
+                    target="_blank"
                     className="hover:translate-y-[-5px] duration-300"
                   >
                     <Twitter />
@@ -79,12 +81,14 @@ const OurTeam = () => {
                 <div className="flex justify-start gap-[18px] sm:mt-[18px] items-center mx-auto sm:ms-[21px]">
                   <Link
                     to="https://in.linkedin.com/"
+                    target="_blank"
                     className="hover:translate-y-[-5px] duration-300"
                   >
                     <Linkedin />
                   </Link>
                   <Link
                     to="https://twitter.com/"
+                    target="_blank"
                     className="hover:translate-y-[-5px] duration-300"
                   >
                     <Twitter />
