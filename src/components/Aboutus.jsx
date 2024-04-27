@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import aboutvideo from "../assets/videos/about_video.mp4";
-import videoPoster from "../assets/images/png/video_poster.png";
+import videoPoster from "../assets/images/webp/video_poster.webp";
 import playbtn from "../assets/images/webp/play_btn.webp";
 import videovec from "../assets/images/webp/video_vector.webp";
 
