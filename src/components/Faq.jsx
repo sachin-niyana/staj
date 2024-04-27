@@ -1,16 +1,57 @@
 import React, { useState } from "react";
-import { accordionData } from "./common/Helper";
-import { HiPlus } from "react-icons/hi2";
-import { HiOutlineMinus } from "react-icons/hi";
+import {
+  Accordion,
+  AccordionBody,
+  AccordionHeader,
+} from "@material-tailwind/react";
+import { HiPlus, HiOutlineMinus } from "react-icons/hi";
 import { Circlebox, Trianglebox, Trianglebox2 } from "./common/Icon";
-
+const accordionData = [
+  {
+    id: "1",
+    heading: "What is the relationship between mobile apps and websites?",
+    paragraph:
+      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
+  },
+  {
+    id: "2",
+    heading: "Why choose mobile app over website?",
+    paragraph:
+      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
+  },
+  {
+    id: "3",
+    heading: "Does a mobile app need a website?",
+    paragraph:
+      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
+  },
+  {
+    id: "4",
+    heading: "What is FAQ in mobile?",
+    paragraph:
+      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
+  },
+  {
+    id: "5",
+    heading: "Are mobile apps more secure than websites?",
+    paragraph:
+      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
+  },
+];
+const Icon = ({ isOpen }) => {
+  return isOpen ? (
+    <HiOutlineMinus className="w-6 h-6" />
+  ) : (
+    <HiPlus className="w-6 h-6" />
+  );
+};
 const Faq = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const handleAccordionToggle = (index) => {
-    setActiveIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
   const [activeTab, setActiveTab] = useState("tab1");
+  const [openTab, setOpenTab] = React.useState(accordionData[0].id); // Set the default to the ID of the first item
+
+  const handleOpen = (id) => {
+    setOpenTab(openTab === id ? null : id);
+  };
 
   const handleTabChange = (tab) => {
     setActiveTab(tab);
@@ -33,12 +74,12 @@ const Faq = () => {
         <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue mx-auto text-center mt-3 max-w-[600px] leading-[113%]">
           Have Questions? We’re here to help.
         </h2>
-        <div className="flex flex-row h-[60px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-9 items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative">
+        <div className="flex flex-row h-[60px] !overflow-x-scroll border gap-5 sm:gap-0 justify-between py-[6px] mt-9 items-center px-[6px] border-[#d7d7d7] rounded-[48px] mx-auto max-w-[1200px] relative bg-white">
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab1"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
+                ? "text-center min-[1025px]:text-md text-[14px] ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue min-[1025px]:text-md text-[14px] ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab1")}
           >
@@ -47,8 +88,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab2"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
+                ? "text-center min-[1025px]:text-md text-[14px] ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue min-[1025px]:text-md text-[14px] ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab2")}
           >
@@ -57,8 +98,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab3"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
+                ? "text-center min-[1025px]:text-md text-[14px] ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue min-[1025px]:text-md text-[14px] ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab3")}
           >
@@ -67,8 +108,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab4"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
+                ? "text-center min-[1025px]:text-md text-[14px] ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue min-[1025px]:text-md text-[14px] ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab4")}
           >
@@ -77,8 +118,8 @@ const Faq = () => {
           <button
             className={` px-4 py-1 duration-300 lg:py-[14px] ${
               activeTab === "tab5"
-                ? "text-center text-md ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
-                : " text-darkblue text-md ff-poppins font-semibold whitespace-nowrap leading-[112%]"
+                ? "text-center min-[1025px]:text-md text-[14px] ff-poppins font-semibold py-[14px] rounded-[100px] ps-7 pe-[27px] bg-golden text-white leading-[112%] whitespace-nowrap"
+                : " text-darkblue min-[1025px]:text-md text-[14px] ff-poppins font-semibold whitespace-nowrap leading-[112%]"
             }`}
             onClick={() => handleTabChange("tab5")}
           >
@@ -88,218 +129,141 @@ const Faq = () => {
 
         {activeTab === "tab1" && (
           <div className="max-w-[950px] mx-auto mt-9 relative">
-            {accordionData.map((faq, index) => (
-              <div
-                key={index}
-                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] text-start ${
-                  activeIndex === index
-                    ? "text-golden text-start"
-                    : "border-y-[1px]"
+            {accordionData.map((item, index) => (
+              <Accordion
+                key={item.id}
+                className={`border-b-[1px] border-darkblue border-opacity-[24%] bg-white py-6 ${
+                  index === accordionData.length - 1 ? "border-none" : ""
                 }`}
+                open={openTab === item.id}
+                icon={<Icon isOpen={openTab === item.id} />}
               >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
+                <AccordionHeader
+                  onClick={() => handleOpen(item.id)}
+                  className={`font-poppins sm:text-lg text-md text-start leading-[133%] py-0 items-start ${
+                    openTab === item.id
+                      ? "text-golden font-semibold"
+                      : "text-darkblue font-normal"
+                  }`}
                 >
-                  <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
-                      activeIndex === index
-                        ? "text-golden font-semibold"
-                        : "text-black font-normal"
-                    }`}
-                  >
-                    {faq.heading}
-                  </p>
-                  {activeIndex === index ? (
-                    <div className="mt-1.5">
-                      <HiOutlineMinus className="w-6 h-6" />
-                    </div>
-                  ) : (
-                    <div className="mt-1.5">
-                      <HiPlus className="w-6 h-6" />
-                    </div>
-                  )}
-                </button>
-                {activeIndex === index && (
-                  <div className="mt-[18px]">
-                    <p className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue">
-                      {faq.peragraph}
-                    </p>
-                  </div>
-                )}
-              </div>
+                  {item.heading}
+                </AccordionHeader>
+                <AccordionBody className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue py-0 mt-[18px]">
+                  {item.paragraph}
+                </AccordionBody>
+              </Accordion>
             ))}
           </div>
         )}
         {activeTab === "tab2" && (
           <div className="max-w-[950px] mx-auto mt-9 relative">
-            {accordionData.map((faq, index) => (
-              <div
-                key={index}
-                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
-                  activeIndex === index ? "text-golden" : "border-y-[1px]"
+            {accordionData.map((item, index) => (
+              <Accordion
+                key={item.id}
+                className={`border-b-[1px] border-darkblue border-opacity-[24%] bg-white py-6 ${
+                  index === accordionData.length - 1 ? "border-none" : ""
                 }`}
+                open={openTab === item.id}
+                icon={<Icon isOpen={openTab === item.id} />}
               >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
+                <AccordionHeader
+                  onClick={() => handleOpen(item.id)}
+                  className={`font-poppins sm:text-lg text-md text-start leading-[133%] py-0 items-start ${
+                    openTab === item.id
+                      ? "text-golden font-semibold"
+                      : "text-darkblue font-normal"
+                  }`}
                 >
-                  <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
-                      activeIndex === index
-                        ? "text-golden font-semibold"
-                        : "text-black font-normal"
-                    }`}
-                  >
-                    {faq.heading}
-                  </p>
-                  {activeIndex === index ? (
-                    <div className="mt-1.5">
-                      <HiOutlineMinus className="w-6 h-6" />
-                    </div>
-                  ) : (
-                    <div className="mt-1.5">
-                      <HiPlus className="w-6 h-6" />
-                    </div>
-                  )}
-                </button>
-                {activeIndex === index && (
-                  <div className="mt-[18px]">
-                    <p className="font-poppins font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
-                      {faq.peragraph}
-                    </p>
-                  </div>
-                )}
-              </div>
+                  {item.heading}
+                </AccordionHeader>
+                <AccordionBody className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue py-0 mt-[18px]">
+                  {item.paragraph}
+                </AccordionBody>
+              </Accordion>
             ))}
           </div>
         )}
         {activeTab === "tab3" && (
           <div className="max-w-[950px] mx-auto mt-9 relative">
-            {accordionData.map((faq, index) => (
-              <div
-                key={index}
-                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
-                  activeIndex === index ? "text-golden" : "border-y-[1px]"
+            {accordionData.map((item, index) => (
+              <Accordion
+                key={item.id}
+                className={`border-b-[1px] border-darkblue border-opacity-[24%] bg-white py-6 ${
+                  index === accordionData.length - 1 ? "border-none" : ""
                 }`}
+                open={openTab === item.id}
+                icon={<Icon isOpen={openTab === item.id} />}
               >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
+                <AccordionHeader
+                  onClick={() => handleOpen(item.id)}
+                  className={`font-poppins sm:text-lg text-md text-start leading-[133%] py-0 items-start ${
+                    openTab === item.id
+                      ? "text-golden font-semibold"
+                      : "text-darkblue font-normal"
+                  }`}
                 >
-                  <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
-                      activeIndex === index
-                        ? "text-golden font-semibold"
-                        : "text-black font-normal"
-                    }`}
-                  >
-                    {faq.heading}
-                  </p>
-                  {activeIndex === index ? (
-                    <div className="mt-1.5">
-                      <HiOutlineMinus className="w-6 h-6" />
-                    </div>
-                  ) : (
-                    <div className="mt-1.5">
-                      <HiPlus className="w-6 h-6" />
-                    </div>
-                  )}
-                </button>
-                {activeIndex === index && (
-                  <div className="mt-[18px]">
-                    <p className="font-poppins text-start max-w-[804px] leading-[144%] font-normal text-md text-darkblue">
-                      {faq.peragraph}
-                    </p>
-                  </div>
-                )}
-              </div>
+                  {item.heading}
+                </AccordionHeader>
+                <AccordionBody className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue py-0 mt-[18px]">
+                  {item.paragraph}
+                </AccordionBody>
+              </Accordion>
             ))}
           </div>
         )}
         {activeTab === "tab4" && (
           <div className="max-w-[950px] mx-auto mt-9 relative">
-            {accordionData.map((faq, index) => (
-              <div
-                key={index}
-                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
-                  activeIndex === index ? "text-golden" : "border-y-[1px]"
+            {accordionData.map((item, index) => (
+              <Accordion
+                key={item.id}
+                className={`border-b-[1px] border-darkblue border-opacity-[24%] bg-white py-6 ${
+                  index === accordionData.length - 1 ? "border-none" : ""
                 }`}
+                open={openTab === item.id}
+                icon={<Icon isOpen={openTab === item.id} />}
               >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
+                <AccordionHeader
+                  onClick={() => handleOpen(item.id)}
+                  className={`font-poppins sm:text-lg text-md text-start leading-[133%] py-0 items-start ${
+                    openTab === item.id
+                      ? "text-golden font-semibold"
+                      : "text-darkblue font-normal"
+                  }`}
                 >
-                  <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
-                      activeIndex === index
-                        ? "text-golden font-semibold"
-                        : "text-black font-normal"
-                    }`}
-                  >
-                    {faq.heading}
-                  </p>
-                  {activeIndex === index ? (
-                    <div className="mt-1.5">
-                      <HiOutlineMinus className="w-6 h-6" />
-                    </div>
-                  ) : (
-                    <div className="mt-1.5">
-                      <HiPlus className="w-6 h-6" />
-                    </div>
-                  )}
-                </button>
-                {activeIndex === index && (
-                  <div className="mt-[18px]">
-                    <p className="font-poppins text-left font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
-                      {faq.peragraph}
-                    </p>
-                  </div>
-                )}
-              </div>
+                  {item.heading}
+                </AccordionHeader>
+                <AccordionBody className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue py-0 mt-[18px]">
+                  {item.paragraph}
+                </AccordionBody>
+              </Accordion>
             ))}
           </div>
         )}
         {activeTab === "tab5" && (
           <div className="max-w-[950px] mx-auto mt-9 relative">
-            {accordionData.map((faq, index) => (
-              <div
-                key={index}
-                className={`sm:p-6 p-5 border-darkblue border-opacity-[24%] ${
-                  activeIndex === index ? "text-golden" : "border-y-[1px]"
+            {accordionData.map((item, index) => (
+              <Accordion
+                key={item.id}
+                className={`border-b-[1px] border-darkblue border-opacity-[24%] bg-white py-6 ${
+                  index === accordionData.length - 1 ? "border-none" : ""
                 }`}
+                open={openTab === item.id}
+                icon={<Icon isOpen={openTab === item.id} />}
               >
-                <button
-                  onClick={() => handleAccordionToggle(index)}
-                  className="flex justify-between items-start border-black cursor-pointer w-full focus:outline-none"
+                <AccordionHeader
+                  onClick={() => handleOpen(item.id)}
+                  className={`font-poppins sm:text-lg text-md text-start leading-[133%] py-0 items-start ${
+                    openTab === item.id
+                      ? "text-golden font-semibold"
+                      : "text-darkblue font-normal"
+                  }`}
                 >
-                  <p
-                    className={`font-poppins sm:text-lg text-[20px] text-start leading-[133%] ${
-                      activeIndex === index
-                        ? "text-golden font-semibold"
-                        : "text-black font-normal"
-                    }`}
-                  >
-                    {faq.heading}
-                  </p>
-                  {activeIndex === index ? (
-                    <div className="mt-1.5">
-                      <HiOutlineMinus className="w-6 h-6" />
-                    </div>
-                  ) : (
-                    <div className="mt-1.5">
-                      <HiPlus className="w-6 h-6" />
-                    </div>
-                  )}
-                </button>
-                {activeIndex === index && (
-                  <div className="mt-[18px]">
-                    <p className="font-poppins text-start font-normal text-md max-w-[804px] leading-[144%] text-darkblue">
-                      {faq.peragraph}
-                    </p>
-                  </div>
-                )}
-              </div>
+                  {item.heading}
+                </AccordionHeader>
+                <AccordionBody className="font-poppins font-normal max-w-[804px] leading-[144%] text-left text-md text-darkblue py-0 mt-[18px]">
+                  {item.paragraph}
+                </AccordionBody>
+              </Accordion>
             ))}
           </div>
         )}
