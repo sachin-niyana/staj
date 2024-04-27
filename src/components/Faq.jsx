@@ -1,43 +1,8 @@
 import React, { useState } from "react";
-import {
-  Accordion,
-  AccordionBody,
-  AccordionHeader,
-} from "@material-tailwind/react";
+import { AccordionBody ,AccordionHeader ,Accordion } from "@material-tailwind/react";
 import { HiPlus, HiOutlineMinus } from "react-icons/hi";
 import { Circlebox, Trianglebox, Trianglebox2 } from "./common/Icon";
-const accordionData = [
-  {
-    id: "1",
-    heading: "What is the relationship between mobile apps and websites?",
-    paragraph:
-      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
-  },
-  {
-    id: "2",
-    heading: "Why choose mobile app over website?",
-    paragraph:
-      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
-  },
-  {
-    id: "3",
-    heading: "Does a mobile app need a website?",
-    paragraph:
-      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
-  },
-  {
-    id: "4",
-    heading: "What is FAQ in mobile?",
-    paragraph:
-      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
-  },
-  {
-    id: "5",
-    heading: "Are mobile apps more secure than websites?",
-    paragraph:
-      "The major difference between a mobile app and a mobile website is that the mobile website is accessed by the user via the separate app installed on the phone and can be accessed both online as well as offline.",
-  },
-];
+import { accordionData } from "./common/Helper";
 const Icon = ({ isOpen }) => {
   return isOpen ? (
     <HiOutlineMinus className="w-6 h-6" />

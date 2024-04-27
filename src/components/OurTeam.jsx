@@ -10,7 +10,7 @@ const OurTeam = () => {
         <p className="text-center text-orange font-poppins font-normal text-md">
           Team
         </p>
-        <h2 className="font-poppins font-extrabold lg:text-xxl sm:text-[45px] text-xl text-darkblue text-center mt-3 leading-[113%]">
+        <h2 className="font-poppins font-extrabold xl:text-xxl sm:text-[45px] text-xl text-darkblue text-center mt-3 leading-[113%]">
           Our team
         </h2>
         <div className="flex lg:flex-row flex-col justify-center gap-8 items-center pt-8 md:mt-[60px]">
